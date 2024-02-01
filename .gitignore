@@ -1,5 +1,9 @@
 HELP.md
-target/
+# Remove the following line to include the 'target/' directory
+# target/
+# Exclude all JAR files by default
+*.jar
+
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/

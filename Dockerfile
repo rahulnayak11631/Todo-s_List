@@ -1,7 +1,15 @@
-FROM openjdk:18
+FROM ubuntu:latest
 
-COPY ./todo_list-0.0.1-SNAPSHOT.jar /app.jar
+RUN apt-get update
+
+RUN apt-get install -y openjdk-17-jdk
+
+RUN apt-get install -y maven
+
+COPY . /home
+
+WORKDIR /home
 
 EXPOSE 8026
 
-CMD ["java","-jar","app.jar"]
+CMD ["mvn","spring-boot:run"]

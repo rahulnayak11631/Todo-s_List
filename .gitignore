@@ -1,6 +1,7 @@
 HELP.md
 # Remove the following line to include the 'target/' directory
-# target/
+target/
+
 # Exclude all JAR files by default
 *.jar
 
@@ -35,3 +36,4 @@ build/
 
 ### VS Code ###
 .vscode/
+.env

@@ -10,6 +10,12 @@ COPY . /home
 
 WORKDIR /home
 
+ENV DB_URL=jdbc:mysql://172.31.32.104:3306/todos_list
+
+ENV DB_USERNAME=root
+
+ENV DB_PASSWORD=root
+
 EXPOSE 8026
 
 CMD ["mvn","spring-boot:run"]
